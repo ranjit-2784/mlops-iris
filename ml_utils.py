@@ -9,7 +9,8 @@ from sklearn.metrics import accuracy_score
 
 # define a Gaussain NB classifier
 clf = GaussianNB()
-clf1 = MLPClassifier()
+clf1 = KNeighborsClassifier(n_neighbors=5)
+#clf1 = MLPClassifier(max_iter=500)
 clf_better = clf
 
 # define the class encodings and reverse encodings
